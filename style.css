@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+
+}
+
+body {
+    background-color: #f8f9fa;
+
+}
+
+/* Navbar */
+.navbar {
+    background: rgba(255, 255, 255, 0.39);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 15px 0;
+}
+
+.container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: rgb(19, 95, 25);
+    font-weight: bold;
+    padding: 18px 55px;
+    transition: 0.7s;
+    font-size: 1.5rem;
+}
+
+.nav-links li a.active,
+.nav-links li a:hover {
+    background: #418C5D;
+    color: white;
+    border-radius: 150px;
+
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('Assets/background.png') center/cover no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+
+}
+
+.hero-content {
+    margin-top: 20vh;
+    height: 55vh;
+    gap: 15px;
+
+    background: #418c5c91;
+    padding: 50px 50px 0px 70px;
+    border-radius: 0px 50px 50px 0px;
+    color: white;
+    max-width: 48vw;
+    animation: expandWidth 1.8s ease-out forwards;
+}
+
+@keyframes expandWidth {
+    from {
+        max-width: 0vw;
+    }
+
+    to {
+        max-width: 48vw;
+    }
+}
+
+.hero h1 {
+    margin-top:  20px;
+    font-size: 3.5rem;
+    opacity: 0;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    animation: changeOpacity 3.5s ease-out forwards;
+    animation-delay: 1.8s; 
+
+}
+
+
+
+@keyframes changeOpacity {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+
+.subtitulo-clinica {
+    font-size: 2.4rem;
+    opacity: 0;
+    text-shadow: 2px 3px 1px rgba(116, 116, 116, 0.527);
+    animation: 
+    changeOpacity 3.5s ease-out forwards;
+    animation-delay: 1.8s; 
+
+}
+
+
+
+/* WhatsApp Icon */
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(13, 204, 13);
+    color: white;
+    font-size: 28px;
+    text-decoration: none;
+    padding: 12px 16px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.whatsapp-icon:hover {
+    background: rgb(13, 255, 13);
+}
+
+.whatsapp-icon i {
+    font-size: 28px;
+}
+
+.logo img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100px;
+
+}

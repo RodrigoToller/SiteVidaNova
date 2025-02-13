@@ -1,0 +1,25 @@
+{
+  "name": "sitevidanova",
+  "version": "1.0.0",
+  "description": "Repositorio para controle do site Vida Nova",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RodrigoToller/SiteVidaNova.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/RodrigoToller/SiteVidaNova/issues"
+  },
+  "homepage": "https://github.com/RodrigoToller/SiteVidaNova#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3"
+  }
+}
