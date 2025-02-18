@@ -3,10 +3,7 @@
 
 
 :root {
-
     --colorPrimary: #418C5D;
-
-
 }
 
 * {
@@ -189,5 +186,87 @@ body {
     width: 6rem;
     height: 6rem;
     border-radius: 100px;
+
+}
+
+.backgound-img{
+
+    background-color: var(--colorPrimary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12vw;
+    padding: 15px;
+    border-radius: 150px;
+
+}
+
+.backgound-img img{
+
+    width: 16vw;
+    height: 20vh;
+    border-radius: 150px;
+}
+
+
+
+
+.section-oque-fazemos{
+    padding: 5vw 2vw 2vw 2vw;
+    background-color: #F3F4F3;
+}
+
+.agrupador-motivos{
+    display: flex;
+    align-items: center;
+}
+
+
+
+.section-oque-fazemos h2 {
+
+    color: var(--colorPrimary);
+    border-bottom: 2px solid var(--colorPrimary);
+    margin-right: 30vw;
+    margin-left: 30vw;
+    text-align: center;
+    font-size: 7vh;
+ 
+}
+
+
+.section-oque-fazemos h3{
+
+    border-bottom: 2px solid var(--colorPrimary);
+    margin: 20px;
+
+}
+
+.grid-motivos{
+
+    display: grid;
+	grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 0vh 10vw 10vh 10vw;
+    background-color: wheat;
+    border-radius: 50px;
+    height: 68vh;
+
+}
+
+.grid-motivos p{
+    
+}
+
+
+
+.btn-veja-mais{
+
+    text-decoration: none;
+    background-color: var(--colorPrimary);
+    border-radius: 24px;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
 
 }
