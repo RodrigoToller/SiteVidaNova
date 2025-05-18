@@ -1,0 +1,10 @@
+# Ignorar a pasta node_modules (caso esteja usando npm)
+node_modules/
+
+# Ignorar a pasta do Bootstrap (caso você tenha baixado ela para o seu projeto)
+bootstrap/
+
+# Ignorar arquivos de build ou outros arquivos temporários
+*.log
+*.tmp
+/.vs
