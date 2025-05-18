@@ -400,3 +400,73 @@ body {
 font-weight: bold;
 
 }
+
+
+
+
+.hero-nossos-produtos-home {
+    height: 100vh;
+    background: url('Assets/15.png') ;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    background-size: 120% 120%;  /* A imagem estica para preencher todo o elemento */
+
+}
+
+
+
+
+.separador-aparelhos{
+
+    width: 70vw;
+}
+.divisor-aparelhos{
+
+display: flex;
+justify-content: center;
+
+}
+
+.card-aparelhos{
+
+
+    
+
+    display: grid;
+	grid-template-columns:  1fr;
+    width: 20vw; 
+    justify-items: center;
+    border-radius: 50px;
+    height: 65vh;
+
+
+
+
+}
+
+.card-aparelhos p{
+    
+    
+    background-color: #FBFCFB;
+    text-align: center;
+    align-items: center; /* Centraliza verticalmente */    
+    padding: 90px 35px 30px 35px;
+    border-radius: 45px;
+    margin-bottom: 0px;
+    height: 52vh;
+
+    
+}
+
+.hero-nossos-produtos-home h3{
+
+    font-size: 38px;
+    text-align: center;
+    border-bottom: 2px solid var(--colorPrimary);
+    margin: 20px;
+    color: #418C5D;
+    transform: perspective(500px) rotateX(0deg) translateY(150px);
+
+}
