@@ -13,6 +13,7 @@
 
 body {
   background-color: #f8f9fa;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Navbar */
@@ -109,6 +110,19 @@ body {
   opacity: 0;
   animation: changeOpacity 1.5s ease-out forwards;
   animation-delay: 0.4s;
+}
+
+h2 {
+  margin-top: 20px;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  color: var(--colorPrimary);
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  opacity: 0;
+  animation: changeOpacity 1.5s ease-out forwards;
+  animation-delay: 0.4s;
+  
 }
 
 @media (max-width: 1600px) {
@@ -218,9 +232,9 @@ body {
 
 .section-oque-fazemos h3 {
   border-bottom: 2px solid var(--colorPrimary);
+  font-size: 1.5rem;
   margin: 20px;
   color: #418c5d;
-  transform: translateY(100px);
 }
 
 .grid-motivos {
@@ -372,5 +386,13 @@ body {
   border-bottom: 2px solid var(--colorPrimary);
   margin: 20px;
   color: var(--colorPrimary);
-  transform: translateY(150px);
+}
+
+.card-img-top {
+  background: #418c5d;
+  border-radius: 5rem 5rem 0 0;
+}
+
+.card {
+  border-radius: 5rem;
 }
