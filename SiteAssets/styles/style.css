@@ -62,12 +62,12 @@ body {
 
 /* Hero Section */
 .hero {
-    height: 100vh;
-    background: url('Assets/background.png') center/cover no-repeat;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: left;
+  height: 100vh;
+  background: url('../images/background.png') center/cover no-repeat;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
 }
 
 .hero-content {
@@ -322,13 +322,12 @@ body {
 
 
 .hero-quem-somos {
-    height: 100vh;
-    background: url('Assets/11.png') center/cover no-repeat;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: left;
-
+  height: 100vh;
+  background: url('../images/11.png') center/cover no-repeat;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
 }
 
 
@@ -405,14 +404,13 @@ font-weight: bold;
 
 
 .hero-nossos-produtos-home {
-    height: 100vh;
-    background: url('Assets/15.png') ;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: left;
-    background-size: 120% 120%;  /* A imagem estica para preencher todo o elemento */
-
+  height: 100vh;
+  background: url('../images/15.png');
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+  background-size: 120% 120%; /* A imagem estica para preencher todo o elemento */
 }
 
 
