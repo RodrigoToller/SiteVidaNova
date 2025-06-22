@@ -1,298 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clínica Integrativa Vida Nova</title>
-  <link rel="icon" type="image/png" href="../SiteAssets/images/logotipo-vida-nova.png">
-
-  <!-- Bootstrap 5.3.3 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="../SiteAssets/styles/style.css">
-
+  <style>
+    body {
+      background-color: #111;
+      color: #f1f1f1;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+    .gear {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 20px;
+      animation: spin 4s linear infinite;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+    }
+  </style>
 </head>
-
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg custom-navbar shadow-sm">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="../SiteAssets/images/logotipo-vida-nova.png" alt="Logo" height="50">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex gap-3">
-          <li class="nav-item">
-            <a class="nav-link active text-white" href="#">INÍCIO</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./sobre-nos.html">SOBRE NÓS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./servicos.html">SERVIÇOS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./produtos.html">PRODUTOS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./contato.html">CONTATO</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <!-- SVG da engrenagem -->
+  <svg class="gear" viewBox="0 0 512 512" fill="#f1f1f1" xmlns="http://www.w3.org/2000/svg">
+    <path d="M487.4 315.7c3.1-18.6 4.6-37.7 4.6-56.7s-1.6-38.1-4.6-56.7l-53.9-11.4c-3.6-12.9-8.4-25.4-14.3-37.3l30.7-46.3c-13.5-20.8-29.5-40.1-47.7-57.2L356 79.4c-11.9-5.9-24.4-10.7-37.3-14.3L307.3 11.2c-18.6-3.1-37.7-4.6-56.7-4.6s-38.1 1.6-56.7 4.6L183.4 65c-12.9 3.6-25.4 8.4-37.3 14.3L99.7 48.6C78.9 62.1 59.6 78.1 42.5 96.3l30.7 46.3c-5.9 11.9-10.7 24.4-14.3 37.3L5 204.3C1.9 222.9 0.4 242 0.4 261s1.6 38.1 4.6 56.7l53.9 11.4c3.6 12.9 8.4 25.4 14.3 37.3l-30.7 46.3c13.5 20.8 29.5 40.1 47.7 57.2l46.3-30.7c11.9 5.9 24.4 10.7 37.3 14.3l11.4 53.9c18.6 3.1 37.7 4.6 56.7 4.6s38.1-1.6 56.7-4.6l11.4-53.9c12.9-3.6 25.4-8.4 37.3-14.3l46.3 30.7c20.8-13.5 40.1-29.5 57.2-47.7l-30.7-46.3c5.9-11.9 10.7-24.4 14.3-37.3l53.9-11.4zM256 336c-44.2 0-80-35.8-80-80s35.8-80 80-80c44.2 0 80 35.8 80 80s-35.8 80-80 80z"/>
+  </svg>
 
-
-  <!-- Hero Section -->
-  <section class="hero py-5">
-    <div class="container" style="margin: 0; padding:0;">
-      <div class="card-top-section bg-success text-white p-4 opacity-75">
-        <h1 class="display-5 fw-bold">Bem-vindo à Clínica Integrativa Vida Nova!</h1>
-        <p class="lead subtitulo-clinica">
-          Onde cada som é um pedaço de vida que nos fortalece, nos envolve e nos faz sentir completos.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- WhatsApp Button -->
-  <a href="#" class="btn-floating-whatsapp position-fixed bottom-0 end-0 m-3 fs-3 text-success">
-    <i class="bi bi-whatsapp"></i>
-  </a>
-
-  <!-- O que Fazemos -->
-  <section class="section-oque-fazemos py-5">
-    <div class="container">
-      <h2 class="text-center mb-5">O QUE FAZEMOS?</h2>
-      <div class="row g-4 justify-content-center">
-        <!-- Avaliação -->
-        <div class="col-md-3">
-          <div class="card h-100 text-center">
-            <img src="../SiteAssets/images/5.png" class="card-img-top" alt="Avaliação">
-            <div class="card-body">
-              <h3 class="card-title">AVALIAÇÃO</h3>
-              <p class="card-text">
-                Utilizamos tecnologias avançadas para avaliar a saúde auditiva e diagnosticar possíveis condições. Com
-                os resultados em mãos, podemos planejar um tratamento eficaz e único, garantindo a melhor solução para
-                cada caso e proporcionando a qualidade de vida que nossos pacientes merecem.
-              </p>
-              <a class="btn btn-success custom-border-max" href="#">VEJA MAIS</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-1"></div>
-        <!-- Procedimentos -->
-        <div class="col-md-3">
-          <div class="card h-100 text-center">
-            <img src="../SiteAssets/images/8.png" class="card-img-top" alt="Procedimentos">
-            <div class="card-body">
-              <h3 class="card-title">PROCEDIMENTOS</h3>
-              <p class="card-text">
-                Oferecemos técnicas avançadas e protocolos diferenciados, que visam aliviar sintomas e promover a
-                recuperação de forma eficaz. Cada tratamento é personalizado, adaptado às necessidades específicas de
-                cada paciente, garantindo resultados duradouros e proporcionando mais conforto e qualidade de vida.
-              </p>
-              <a class="btn btn-success custom-border-max" href="#">VEJA MAIS</a>
-            </div>
-          </div>
-        </div>
-        <!-- Manutenção -->
-        <div class="col-md-1"></div>
-        <div class="col-md-3">
-          <div class="card h-100 text-center">
-            <img src="../SiteAssets/images/9.png" class="card-img-top" alt="Manutenção">
-            <div class="card-body">
-              <h3 class="card-title">MANUTENÇÃO</h3>
-              <p class="card-text">
-                Visando garantir o bom funcionamento e prolongar a vida útil dos dispositivos, realizamos serviços de
-                limpeza, ajustes e reparos, assegurando que seus aparelhos ofereçam o melhor desempenho possível.
-                Garantindo conforto e clareza sonora, permitindo que você aproveite cada momento com mais confiança.
-              </p>
-              <a class="btn btn-success custom-border-max" href="#">VEJA MAIS</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Quem Somos -->
-  <section class="hero-quem-somos bg-light py-5">
-    <div class="container card bg-white p-4 custom-border-max opacity-75">
-      <div class="text-center">
-        <h2 class="text-center mb-5">Quem somos</h2>
-        <p style="font-size: 1.5rem">
-          A <span class="text-success fw-bold">Clínica Integrativa Vida Nova</span> é um lugar onde o cuidado com a
-          saúde auditiva vai além da tecnologia. <br><br>
-          Com mais de 20 anos de experiência, nossa missão é devolver qualidade de vida e a <span
-            class="text-success fw-bold">conexão com o mundo ao redor</span>, oferecendo soluções auditivas
-          personalizadas.<br><br>
-          Com uma equipe dedicada, acolhemos cada paciente de forma única, garantindo um recomeço pleno e <span
-            class="text-success fw-bold">cheio de possibilidades.</span>
-        </p>
-        <a href="#" class="btn btn-success mt-3 custom-border-max">VEJA MAIS</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Missão, Visão, Valores -->
-  <section class="section-missao-visao-valores text-center py-5">
-    <div class="container">
-      <div class="row g-4 justify-content-center">
-        <!-- Missão -->
-        <div class="col-md-3">
-          <div class="card h-100">
-            <img src="../SiteAssets/images/12.png" class="card-img-top" alt="Missão">
-            <div class="card-body">
-              <h3 class="card-title text-success">MISSÃO</h3>
-              <p class="card-text">
-                Transformar vidas por meio da reabilitação auditiva, unindo tecnologia e um cuidado humanizado. Nosso
-                compromisso é oferecer soluções que não apenas restauram a audição, mas também <span
-                  class="text-success fw-bold">resgatam a conexão com o mundo, os laços afetivos e a confiança para
-                  viver plenamente</span>. Com atendimento acolhedor e especializado, devolvemos aos nossos pacientes a
-                <span class="text-success fw-bold">emoção de ouvir cada detalhe da vida.</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-1"></div>
-
-        <!-- Valores -->
-        <div class="col-md-3">
-          <div class="card h-100">
-            <img src="../SiteAssets/images/13.png" class="card-img-top" alt="Valores">
-            <div class="card-body">
-              <h3 class="card-title text-success">VALORES</h3>
-              <p class="card-text">
-                Cuidamos de pessoas com <span class="text-success fw-bold">acolhimento e empatia</span>, respeitando a
-                jornada única de cada paciente. Transformamos vidas com tecnologia de ponta, <span
-                  class="text-success fw-bold">devolvendo sons e emoções</span>. Agimos com integridade, sempre com
-                <span class="text-success fw-bold">transparência e compromisso</span>. Nosso propósito é o bem-estar,
-                <span class="text-success fw-bold">promovendo saúde auditiva e qualidade de vida</span>.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- Visão -->
-        <div class="col-md-1"></div>
-        <div class="col-md-3">
-          <div class="card h-100">
-            <img src="../SiteAssets/images/14.png" class="card-img-top" alt="Visão">
-            <div class="card-body">
-              <h3 class="card-title text-success">VISÃO</h3>
-              <p class="card-text">
-                Ser referência em <span class="text-success fw-bold">fonoaudiologia integrada</span>, oferecendo
-                tratamentos que vão além da audição — <span class="text-success fw-bold">transformam vidas</span>.
-                Acreditamos no poder do som para <span class="text-success fw-bold">resgatar emoções, conexões e
-                  momentos preciosos</span>. Com inovação, humanização e ética, queremos devolver aos nossos pacientes
-                não apenas a capacidade de ouvir, mas a <span class="text-success fw-bold">alegria de viver
-                  plenamente</span>.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Produtos -->
-  <section class="hero-nossos-produtos-home py-5 bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4"></div>
-        <div class="col-md-5"></div>
-        <div class="col-md-3">
-          <div class="card text-center">
-            <img src="../SiteAssets/images/16.png" class="card-img-top" alt="Produtos">
-            <div class="card-body">
-              <h3 class="card-title">NOSSOS PRODUTOS</h3>
-              <p class="card-text">
-                Descubra nossos aparelhos auditivos de última geração, desenvolvidos para proporcionar clareza sonora e
-                conforto. Contamos com tecnologia avançada para garantir uma experiência auditiva natural e
-                personalizada.
-                <br><br>
-                Redescubra os sons da vida com mais nitidez e bem-estar!
-              </p>
-              <a href="#" class="btn btn-success mt-3 custom-border-max">VEJA MAIS</a>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- Footer -->
-  <footer class="bg-success text-white">
-    <div class="container">
-      <div class="row g-4">
-
-        <!-- Quem Somos -->
-        <div class="col-md-3">
-          <h5 class="d-flex align-items-center mb-3">
-            <i class="bi bi-person-fill me-2"></i> Quem Somos
-          </h5>
-          <p>
-            Clínica Integrativa Vida Nova<br>
-            Reescrevendo histórias, renovando esperanças.<br>
-            CNPJ 31.671.948/0001-00
-          </p>
-        </div>
-
-        <!-- Localização -->
-        <div class="col-md-3">
-          <h5 class="d-flex align-items-center mb-3">
-            <i class="bi bi-geo-alt-fill me-2"></i> Localização
-          </h5>
-          <p>
-            Rua Adriático, 166 - Jardim do Mar<br>
-            São Bernardo do Campo - SP<br>
-            CEP 09725-670
-          </p>
-        </div>
-
-        <!-- Atendimento -->
-        <div class="col-md-3">
-          <h5 class="d-flex align-items-center mb-3">
-            <i class="bi bi-clock-fill me-2"></i> Atendimento
-          </h5>
-          <p>De segunda à sexta-feira das <br /> 9h às 12h - 13h às 17h</p>
-          <p><i class="bi bi-telephone-fill me-2"></i> (11) 4427-1397</p>
-          <p><i class="bi bi-whatsapp me-2"></i> (11) 4122-2616</p>
-        </div>
-
-        <!-- Nos Acompanhe -->
-        <div class="col-md-3">
-          <h5 class="d-flex align-items-center mb-3">
-            <i class="bi bi-share-fill me-2"></i> Nos acompanhe
-          </h5>
-          <div class="d-flex gap-3 fs-4">
-            <a href="https://www.instagram.com/vidanovaclinicaintegrativa?igsh=aDdmemtycHlxZDRt" class="text-white"><i
-                class="bi bi-instagram"></i></a>
-            <a href="https://www.youtube.com/@vidanovaclinicaintegrativa" class="text-white"><i
-                class="bi bi-youtube"></i></a>
-            <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="text-white"><i class="bi bi-tiktok"></i></a>
-          </div>
-        </div>
-        <p class="text-center">© 2025 Clínica Integrativa Vida Nova. Todos os direitos reservados.</p>
-
-      </div>
-    </div>
-
-  </footer>
-
-
-  <!-- Bootstrap Bundle JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <h1>Estamos em manutenção 👷🚧</h1>
+  <p>Logo o novo site estará no ar. Obrigado pela paciência!</p>
 </body>
-
 </html>
